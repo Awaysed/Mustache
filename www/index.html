@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>你好</h1>
+    <script src="/xuni/bundle.js"></script>
+    <script>
+      // 模板字符串
+      var templateStr = `<div>
+      <ol>
+        {{#studens}}
+        <li>
+          学生{{item.name}}的爱好是
+          <ol>
+            {{#item.hobbles}}
+            <li>{{.}}</li>
+            {{/item.hobbles}}
+          </ol>
+        </li>
+        {{/students}}
+      </ol>
+    </div>`;
+      // 数据
+      var deta = {};
+      SStemplate.render(templateStr, deta);
+    </script>
+  </body>
+</html>
