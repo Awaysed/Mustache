@@ -24,9 +24,12 @@
       //     {{/students}}
       //   </ol>
       // </div>`;
-      const templateStr = "我爱{{somebody}},{{somebody}}也爱我";
+      const templateStr = "我爱{{somebody}},{{somebody}}也爱我,{{a.b}}";
       const data = {
         somebody: "周莉",
+        a:{
+          b:'爱你哦'
+        }
       };
       // 数据
       SStemplate.render(templateStr, data);
