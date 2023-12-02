@@ -20,7 +20,7 @@ export default function parseTemplateToTokens(templateStr) {
       tokens.push(["name", words]);
     }
   }
-  // 处理模板嵌套
+  // 处理模板嵌套 
   return nestTokens(tokens);
-  
+
 }
