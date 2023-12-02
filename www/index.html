@@ -10,30 +10,26 @@
     <script src="/xuni/bundle.js"></script>
     <script>
       // 模板字符串
-      
-
-
-
-
-      
-      //
-      var templateStr = `<div>
-      <ol>
-        {{#studens}}
-        <li>
-          学生{{item.name}}的爱好是
-          <ol>
-            {{#item.hobbles}}
-            <li>{{.}}</li>
-            {{/item.hobbles}}
-          </ol>
-        </li>
-        {{/students}}
-      </ol>
-    </div>`;
+      //   var templateStr = `<div>
+      //   <ol>
+      //     {{#studens}}
+      //     <li>
+      //       学生{{item.name}}的爱好是
+      //       <ol>
+      //         {{#item.hobbles}}
+      //         <li>{{.}}</li>
+      //         {{/item.hobbles}}
+      //       </ol>
+      //     </li>
+      //     {{/students}}
+      //   </ol>
+      // </div>`;
+      const templateStr = "我爱{{somebody}},{{somebody}}也爱我";
+      const data = {
+        somebody: "周莉",
+      };
       // 数据
-      var deta = {};
-      SStemplate.render(templateStr, deta);
+      SStemplate.render(templateStr, data);
     </script>
   </body>
 </html>
