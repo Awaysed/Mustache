@@ -1,6 +1,6 @@
 export default function lookUp (data,key){
    
-    if(key.indexOf('.') == -1) return data[key]
+    if(key.indexOf('.') == -1 || key === '.') return data[key]
 
     const keyArray = key.split('.')
     let tempObj = data
