@@ -15,6 +15,4 @@ export default function renderTemplate(tokens, data) {
     return upper;
   }, resultStr);
   return result
-
-  // console.log("hahhah", result);
 }
