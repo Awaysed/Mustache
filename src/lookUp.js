@@ -1,5 +1,5 @@
 export default function lookUp (data,key){
-   
+   // 该函数时取对象类似于'a.b.c'的属性
     if(key.indexOf('.') == -1 || key === '.') return data[key]
 
     const keyArray = key.split('.')

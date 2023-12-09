@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1>你好</h1>
+    <div class="container"></div>
     <script src="/xuni/bundle.js"></script>
     <script>
       // 模板字符串
@@ -52,15 +53,22 @@
       //   }
       // };
       const data = {
-        studens:[
-          {name:"周莉",age:12,sex:'female',hobbies:['睡觉','吃饭']},
-          {name:"周莉1",age:23,sex:'man',hobbies:['睡觉','吃饭']},
-          {name:"周莉2",age:1223,sex:'female',hobbies:['睡觉','吃饭']}
-        ]
+        studens: [
+          { name: "周莉", age: 12, sex: "female", hobbies: ["睡觉", "吃饭"] },
+          { name: "周莉1", age: 23, sex: "man", hobbies: ["睡觉", "吃饭"] },
+          {
+            name: "周莉2",
+            age: 1223,
+            sex: "female",
+            hobbies: ["睡觉", "吃饭"],
+          },
+        ],
         // studens: ['周莉','周莉1'],
       };
       // 数据
-      SStemplate.render(templateStr, data);
+      const str = SStemplate.render(templateStr, data);
+      const e = document.querySelector('.container')
+      e.innerHTML = str
     </script>
   </body>
 </html>
